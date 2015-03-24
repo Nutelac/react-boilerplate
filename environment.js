@@ -1,0 +1,1 @@
+global.Q = require('q');

@@ -1,0 +1,42 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "React boilerplate",
+  "licence": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "start": "node webpack-server.js",
+    "build": "NODE_ENV=production webpack -p --progress src/index.jsx bundle.js"
+  },
+  "jest": {
+    "setupEnvScriptFile": "environment.js",
+    "scriptPreprocessor": "preprocessor.js",
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^1.1.0",
+    "babel-core": "^4.0.1",
+    "babel-loader": "^4.0.0",
+    "css-loader": "^0.9.1",
+    "eslint": "^0.17.1",
+    "eslint-plugin-react": "^1.5.0",
+    "jsx-loader": "^0.12.2",
+    "less": "^2.4.0",
+    "less-loader": "^2.2.0",
+    "normalize.css": "^3.0.2",
+    "q": "^1.2.0",
+    "react-hot-loader": "^1.1.1",
+    "style-loader": "^0.8.3",
+    "webpack": "^1.5.1",
+    "webpack-dev-server": "1.6.4"
+  },
+  "dependencies": {
+    "babel": "^4.7.8",
+    "react": "^0.13.0"
+  }
+}
