@@ -11,7 +11,8 @@
   "jest": {
     "scriptPreprocessor": "preprocessor.js",
     "testFileExtensions": [
-      "js"
+      "js",
+      "jsx"
     ],
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules"
