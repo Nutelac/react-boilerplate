@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "start": "node webpack-server.js",
-    "build": "NODE_ENV=production webpack -p --progress src/index.jsx bundle.js",
+    "build": "NODE_ENV=production webpack -p --progress src/index.jsx bundle.js"
   },
   "jest": {
     "scriptPreprocessor": "preprocessor.js",
@@ -22,13 +22,10 @@
     "babel-core": "^4.0.1",
     "babel-loader": "^4.0.0",
     "css-loader": "^0.9.1",
-    "eslint": "^0.17.1",
-    "eslint-plugin-react": "^1.5.0",
     "jest-cli": "^0.4.0",
     "jsx-loader": "^0.12.2",
     "less": "^2.4.0",
     "less-loader": "^2.2.0",
-    "normalize.css": "^3.0.2",
     "react-hot-loader": "^1.1.1",
     "style-loader": "^0.8.3",
     "webpack": "^1.5.1",
