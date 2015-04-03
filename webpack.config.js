@@ -26,19 +26,19 @@ module.exports = {
       { test: /\.jsx$/, loaders: [
         'react-hot',
         'jsx?harmony',
-        'babel-loader',
+        'babel-loader'
       ], exclude: /node_modules/ },
       { test: /\.js$/, loaders: [
         'react-hot',
         'jsx?harmony',
-        'babel-loader',
+        'babel-loader'
       ], exclude: /node_modules/ },
       { test: /\.css$/, loaders: [
         'style-loader',
         'css-loader',
-        'autoprefixer-loader',
+        'autoprefixer-loader'
       ], exclude: /node_modules/ },
-      { test: /\.less$/, loader: 'style!css!less' }
+      { test: /\.less$/, loader: 'style!css!autoprefixer!less' }
     ]
   },
 };
